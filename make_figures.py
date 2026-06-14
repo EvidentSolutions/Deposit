@@ -110,7 +110,7 @@ def fig1_schematic():
             bbox=dict(boxstyle='round,pad=0.4', facecolor='#ffffcc',
                       edgecolor='#999999', linewidth=0.5))
 
-    ax.set_title("Figure 1: Deposit channels across grammatical roles", fontsize=11, pad=10)
+    # No title — LaTeX caption handles numbering
     fig.tight_layout()
     fig.savefig(OUT / "fig1_schematic.pdf", bbox_inches='tight')
     fig.savefig(OUT / "fig1_schematic.png", bbox_inches='tight')
@@ -146,7 +146,7 @@ def fig2_role_comparison():
     ax.legend(fontsize=7.5, loc='lower left')
     ax.set_ylim(-0.8, 1.1)
     ax.axhline(0, color='black', linewidth=0.5)
-    ax.set_title("Figure 2: Word-specific transport quality by role", fontsize=11)
+    # No title — LaTeX caption handles numbering
 
     for bar in bars1:
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.02,
@@ -200,7 +200,7 @@ def fig3_pipeline():
             bbox=dict(boxstyle='round,pad=0.3', facecolor='#c7e9c0',
                       edgecolor='#41ab5d', linewidth=0.8))
 
-    ax.set_title("Figure 3: Discover–validate pipeline", fontsize=11, pad=8)
+    # No title — LaTeX caption handles numbering
     fig.tight_layout()
     fig.savefig(OUT / "fig3_pipeline.pdf", bbox_inches='tight')
     fig.savefig(OUT / "fig3_pipeline.png", bbox_inches='tight')
@@ -247,7 +247,7 @@ def fig4_layer_sweep():
     ax.set_xticklabels([f'L{l}' for l in layers])
     ax.legend(fontsize=7.5, loc='upper left')
     ax.set_ylim(-0.5, 5.5)
-    ax.set_title("Figure 4: Transported copy becomes causal late", fontsize=11)
+    # No title — LaTeX caption handles numbering
 
     fig.tight_layout()
     fig.savefig(OUT / "fig4_layer_sweep.pdf", bbox_inches='tight')
@@ -300,7 +300,7 @@ def fig5_layer_heatmap():
             markerfacecolor='none', markeredgewidth=2)
 
     cb = fig.colorbar(im, ax=ax, shrink=0.8, label='Centered R²')
-    ax.set_title("Figure 5: Deposit map R² across layer pairs (subj→verb)", fontsize=10)
+    # No title — LaTeX caption handles numbering
     fig.tight_layout()
     fig.savefig(OUT / "fig5_layer_heatmap.pdf", bbox_inches='tight')
     fig.savefig(OUT / "fig5_layer_heatmap.png", bbox_inches='tight')
