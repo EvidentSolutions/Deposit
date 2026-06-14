@@ -73,10 +73,10 @@ representation to the consuming position and testing what features it carries---
 applied mainly to agreement and binding. We apply the same measurement to three grammatical
 roles in Pythia-410M-deduped (EleutherAI), including roles where no morphological constraint
 requires cross-position transport. In principle, any position can transport features to any
-other position via attention; we measure four specific source--consumer pairs out of many
+other position via attention; we measure three specific source--consumer pairs out of many
 possible ones, and make no claim about pairs we did not test.
 
-We report four sets of measurements:
+We report three sets of measurements:
 
 \begin{enumerate}
 \item \textbf{Deposit channel strength by role.} Centered $R^2$ of a ridge-fit
@@ -91,10 +91,6 @@ validated.
 \item \textbf{Timing of causal use.} The transported copy is decodable at the consuming
 position from layer~8 but has no measurable causal effect on the prediction until layer~16,
 reaching full effect at layers~20--23.
-
-\item \textbf{Distributional scope.} Forcing rank-2 through rank-5 alternative tokens at the
-prediction position: all 83 tested verbs across all 5 ranks respect the deposited number
-constraint.
 \end{enumerate}
 
 \begin{figure}[t]
@@ -198,14 +194,6 @@ readout defined as $\mathrm{logsumexp}(\text{logits}[\text{place words}]) -
 place, country, area, region\} and object words = \{object, thing, tool, device, item,
 material\}. We compare to random-direction patches at the same position and layer. We use 14
 place nouns and 14 object nouns.
-
-\subsection{Forced-alternative test}
-\label{sec:forced-alt}
-
-For the prompt ``The $\langle$noun$\rangle$ near the wall'' (20 singular/plural pairs, 40
-variants), we record the model's top-5 predictions. We then force each rank-$k$ token
-($k=1\ldots5$) as the next token and continue greedily for 7 tokens. We check whether the
-forced token is a verb that agrees in number with the subject noun.
 
 %----------------------------------------------------------------------
 \section{Results: role comparison}
@@ -473,22 +461,6 @@ at L20--23. The dotted line shows the effect of patching the source noun directl
 The random-direction control (dashed grey) is near zero throughout.}
 \label{fig:layer-sweep}
 \end{figure}
-
-%----------------------------------------------------------------------
-\section{Results: the deposit constrains beyond the top prediction}
-\label{sec:forced-alt-results}
-%----------------------------------------------------------------------
-
-For 40 prompts (``The $\langle$noun$\rangle$ near the wall'', 20 singular/plural pairs), we
-forced the model's rank-1 through rank-5 predictions as the next token and continued
-greedily for 7~tokens. Of the 200 forced continuations (40 prompts $\times$ 5 ranks), many
-forced tokens are punctuation or prepositions (commas, periods, ``of''), not verbs.
-Restricting to forced tokens that are verbs: rank-1 produced 26 verbs (26/26 agree in
-number), rank-2 produced 26 (26/26), rank-3 produced 16 (16/16), rank-4 produced 8 (8/8),
-rank-5 produced 7 (7/7). In total, 83/83 verbs across all ranks respect number agreement
-with the subject noun. P(rank-1) = 0.14, P(rank-2) = 0.10. Cascades diverge immediately
-(0\% token overlap at $t+1$ between rank-1 and rank-2 continuations) but all verbs obey the
-number constraint.
 
 %----------------------------------------------------------------------
 \section{Related work}
