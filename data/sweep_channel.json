@@ -1,0 +1,110 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "K": 8,
+  "axes": [
+    {
+      "cluster": 0,
+      "top_words": [
+        "bread",
+        "seed",
+        "apple",
+        "rice",
+        "soup"
+      ],
+      "n": 17,
+      "transport": 0.8308437466621399,
+      "causal_effect": 79.76216888427734,
+      "random_effect": -0.07144922018051147,
+      "validated": true
+    },
+    {
+      "cluster": 1,
+      "top_words": [
+        "teacher",
+        "actor",
+        "king",
+        "actress",
+        "lord"
+      ],
+      "n": 16,
+      "transport": 0.9295012950897217,
+      "causal_effect": 139.0421600341797,
+      "random_effect": 0.02050672471523285,
+      "validated": true
+    },
+    {
+      "cluster": 2,
+      "top_words": [
+        "heart",
+        "bone",
+        "faith",
+        "head",
+        "life"
+      ],
+      "n": 35,
+      "transport": 0.909113347530365,
+      "causal_effect": 61.2147216796875,
+      "random_effect": -0.017912738025188446,
+      "validated": true
+    },
+    {
+      "cluster": 4,
+      "top_words": [
+        "plate",
+        "cup",
+        "box",
+        "desk",
+        "chair"
+      ],
+      "n": 10,
+      "transport": NaN,
+      "causal_effect": 60.886695861816406,
+      "random_effect": 0.007311045192182064,
+      "validated": true
+    },
+    {
+      "cluster": 5,
+      "top_words": [
+        "dog",
+        "frog",
+        "deer",
+        "wolf",
+        "mouse"
+      ],
+      "n": 19,
+      "transport": 0.7632046341896057,
+      "causal_effect": 89.78263092041016,
+      "random_effect": 0.1293761283159256,
+      "validated": true
+    },
+    {
+      "cluster": 6,
+      "top_words": [
+        "country",
+        "harbor",
+        "forest",
+        "bridge",
+        "village"
+      ],
+      "n": 15,
+      "transport": 0.8470931649208069,
+      "causal_effect": 96.62334442138672,
+      "random_effect": 0.011810177937150002,
+      "validated": true
+    },
+    {
+      "cluster": 7,
+      "top_words": [
+        "lake",
+        "river",
+        "grass"
+      ],
+      "n": 3,
+      "transport": NaN,
+      "causal_effect": 103.1454849243164,
+      "random_effect": -0.10925675928592682,
+      "validated": true
+    }
+  ],
+  "n_validated": 7
+}

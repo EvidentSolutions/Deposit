@@ -1,0 +1,94 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "llex": 8,
+  "ltr": 12,
+  "nwords": 75,
+  "subject_verb": {
+    "train_cos": 0.9999197476676532,
+    "heldout_cos": 0.46757450307670395,
+    "heldout_r2": 0.024718523025512695,
+    "identity_cos": 0.08108035965185416,
+    "null_cos": 0.02445226753326623
+  },
+  "object_pronoun": {
+    "train_cos": 0.9999038130044937,
+    "heldout_cos": 0.6110398502726304,
+    "heldout_r2": 0.28592169284820557,
+    "identity_cos": 0.05540554762180699,
+    "null_cos": 0.03703237494061652
+  },
+  "object_clause_end": {
+    "train_cos": 0.9999367147684097,
+    "heldout_cos": 0.7289328841786635,
+    "heldout_r2": 0.5561723709106445,
+    "identity_cos": 0.012846887822409994,
+    "null_cos": 0.13586465406574702
+  },
+  "cross_role": {
+    "subj_R_to_obj_pronoun": 0.1928994057602004,
+    "subj_R_to_obj_end": 0.1952140941039512
+  },
+  "battery_subject": {
+    "number": {
+      "chan_energy": 0.882,
+      "transport_cos": 0.905,
+      "verdict": "CARRIED"
+    },
+    "gender": {
+      "chan_energy": 0.748,
+      "transport_cos": 0.758,
+      "verdict": "CARRIED"
+    },
+    "animacy": {
+      "chan_energy": 0.842,
+      "transport_cos": 0.915,
+      "verdict": "CARRIED"
+    }
+  },
+  "battery_obj_pronoun": {
+    "number": {
+      "chan_energy": 0.78,
+      "transport_cos": 0.926,
+      "verdict": "CARRIED"
+    },
+    "gender": {
+      "chan_energy": 0.308,
+      "transport_cos": 0.754,
+      "verdict": "CARRIED"
+    },
+    "animacy": {
+      "chan_energy": 0.609,
+      "transport_cos": 0.97,
+      "verdict": "CARRIED"
+    }
+  },
+  "battery_obj_clause_end": {
+    "number": {
+      "chan_energy": 0.68,
+      "transport_cos": 0.833,
+      "verdict": "CARRIED"
+    },
+    "gender": {
+      "chan_energy": 0.546,
+      "transport_cos": 0.763,
+      "verdict": "CARRIED"
+    },
+    "animacy": {
+      "chan_energy": 0.764,
+      "transport_cos": 0.929,
+      "verdict": "CARRIED"
+    }
+  },
+  "eta2": {
+    "subj_lex": 1.0,
+    "subj_verb": 0.16196472942829132,
+    "obj_lex": 0.8242040276527405,
+    "obj_pronoun": 0.30254510045051575,
+    "obj_end": 0.5524279475212097
+  },
+  "eff_rank": {
+    "subj": 32.211299896240234,
+    "obj_pro": 33.37285232543945,
+    "obj_end": 35.71452713012695
+  }
+}

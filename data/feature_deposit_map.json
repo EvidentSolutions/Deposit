@@ -1,0 +1,30 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "llex": 8,
+  "ltr": 12,
+  "nwords": 75,
+  "map": {
+    "train_cos": 0.999897902565343,
+    "train_r2": 0.9996768236160278,
+    "heldout_cos": 0.5388056024124748,
+    "heldout_r2": 0.2018296718597412,
+    "identity_cos": 0.10361270528090627,
+    "null_cos": 0.10367909701246965,
+    "verdict": "ONE SHARED LINEAR DEPOSIT MAP (generalises to unseen words)"
+  },
+  "feature_reencode": {
+    "number": {
+      "cos_R_l_vs_t": 0.7717625498771667,
+      "cos_raw_l_vs_t": 0.2251134216785431
+    },
+    "gender": {
+      "cos_R_l_vs_t": 0.7982848882675171,
+      "cos_raw_l_vs_t": 0.2970007061958313
+    },
+    "animacy": {
+      "cos_R_l_vs_t": 0.9416981935501099,
+      "cos_raw_l_vs_t": 0.137628436088562
+    }
+  },
+  "R_effrank": 29.825260162353516
+}

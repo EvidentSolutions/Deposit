@@ -1,0 +1,18 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "transport": {
+    "body": 0.8881011605262756,
+    "animacy_baseline": 0.47019070386886597
+  },
+  "baseline": {
+    "body_subj": 3.169905185699463,
+    "object_subj": -1.1782629489898682
+  },
+  "causal": {
+    "effect_body": 2.7627806663513184,
+    "effect_random": -0.004912376403808594,
+    "set_to_body": 1.5358004570007324,
+    "set_to_obj": -1.226980209350586,
+    "verdict": "CAUSAL: the discovered body-part axis shifts the category prediction; random does not"
+  }
+}

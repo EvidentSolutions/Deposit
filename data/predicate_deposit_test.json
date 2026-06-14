@@ -1,0 +1,63 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "llex": 8,
+  "ltr": 12,
+  "nverbs": 80,
+  "verb_near": {
+    "train_cos": 0.9999856650829315,
+    "heldout_cos": 0.646866860985756,
+    "heldout_r2": 0.4220290184020996,
+    "identity_cos": 0.36557969748973845,
+    "null_cos": 0.06360207464313135
+  },
+  "verb_far": {
+    "train_cos": 0.9999830375115076,
+    "heldout_cos": 0.705154886841774,
+    "heldout_r2": 0.5489394664764404,
+    "identity_cos": 0.07449196774978191,
+    "null_cos": -0.022799270099494607
+  },
+  "battery_near": {
+    "transitivity": {
+      "chan_energy": 0.617,
+      "transport_cos": 0.983,
+      "verdict": "CARRIED"
+    },
+    "motion-vs-cognition": {
+      "chan_energy": 0.572,
+      "transport_cos": 0.97,
+      "verdict": "CARRIED"
+    },
+    "contact-vs-noncontact": {
+      "chan_energy": 0.668,
+      "transport_cos": 0.957,
+      "verdict": "CARRIED"
+    }
+  },
+  "battery_far": {
+    "transitivity": {
+      "chan_energy": 0.416,
+      "transport_cos": 0.965,
+      "verdict": "CARRIED"
+    },
+    "motion-vs-cognition": {
+      "chan_energy": 0.64,
+      "transport_cos": 0.98,
+      "verdict": "CARRIED"
+    },
+    "contact-vs-noncontact": {
+      "chan_energy": 0.622,
+      "transport_cos": 0.984,
+      "verdict": "CARRIED"
+    }
+  },
+  "eta2": {
+    "verb_lex": 0.8642614483833313,
+    "verb_near": 0.9125379323959351,
+    "verb_far": 0.5523858070373535
+  },
+  "eff_rank": {
+    "near": 52.553466796875,
+    "far": 41.531166076660156
+  }
+}

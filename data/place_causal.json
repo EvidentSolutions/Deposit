@@ -1,0 +1,18 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "transport": {
+    "place": 0.8475461006164551,
+    "number_baseline": 0.3200702965259552
+  },
+  "baseline": {
+    "place_subj": 3.9555373191833496,
+    "nonplace_subj": -1.8375372886657715
+  },
+  "causal": {
+    "effect_place": 4.155574321746826,
+    "effect_random": -0.0023603439331054688,
+    "set_to_place": 2.283407211303711,
+    "set_to_obj": -1.8721671104431152,
+    "verdict": "CAUSAL: the discovered place axis shifts the category prediction; random does not"
+  }
+}

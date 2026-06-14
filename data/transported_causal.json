@@ -1,0 +1,40 @@
+{
+  "model": "EleutherAI/pythia-410m-deduped",
+  "L": 8,
+  "baseline": {
+    "place": 3.3213212490081787,
+    "object": -1.4863635301589966
+  },
+  "cos_transported_vs_lexical": 0.044441185891628265,
+  "noun_position": {
+    "effect": 3.190569043159485,
+    "random": 9.655952453613281e-06
+  },
+  "consuming_by_layer": {
+    "4": {
+      "effect": 0.053025007247924805,
+      "random": -4.2319297790527344e-05
+    },
+    "8": {
+      "effect": 0.09985160827636719,
+      "random": 0.001106858253479004
+    },
+    "12": {
+      "effect": 0.8145650029182434,
+      "random": -0.0033249855041503906
+    },
+    "16": {
+      "effect": 2.188514292240143,
+      "random": -0.0010679960250854492
+    },
+    "20": {
+      "effect": 4.274923205375671,
+      "random": -0.00343167781829834
+    },
+    "23": {
+      "effect": 4.480847477912903,
+      "random": -0.004133820533752441
+    }
+  },
+  "verdict": "deposited copy BECOMES causal at the consuming position by L23 (effect +4.48)"
+}

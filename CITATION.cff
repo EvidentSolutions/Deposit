@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: article
+title: "Feature Transport Across Grammatical Roles in Pythia-410M"
+authors:
+  - family-names: Tuomi
+    given-names: Olli
+    affiliation: Evident Solutions Oy
+date-released: 2026-06-14
+url: "https://github.com/EvidentSolutions/Deposit"
+keywords:
+  - mechanistic interpretability
+  - feature transport
+  - deposit channels
+  - transformers
+  - Pythia
+license: MIT

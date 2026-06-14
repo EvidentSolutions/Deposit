@@ -1,0 +1,44 @@
+{
+  "subj_verb": {
+    "n_words": 112,
+    "full_matched_r2": 0.41405086517333983,
+    "full_matched_std": 0.0429501861786664,
+    "full_cross_r2": -0.41843026876449585,
+    "full_cross_std": 0.09974050372311447,
+    "full_delta_r2": 0.8324811339378357,
+    "feature_subspace_dim": 3,
+    "feature_r2": 0.8576489746570587,
+    "feature_std": 0.013958853350954968,
+    "channel_dim": 30,
+    "channel_r2": 0.9384487748146058,
+    "channel_std": 0.004824079184037579
+  },
+  "obj_pronoun": {
+    "n_words": 112,
+    "full_matched_r2": 0.5224250078201294,
+    "full_matched_std": 0.03961142158316055,
+    "full_cross_r2": -0.3260504245758057,
+    "full_cross_std": 0.05257574251334665,
+    "full_delta_r2": 0.848475432395935,
+    "feature_subspace_dim": 3,
+    "feature_r2": 0.42973330020904543,
+    "feature_std": 0.05390143696410671,
+    "channel_dim": 30,
+    "channel_r2": 0.9646784603595734,
+    "channel_std": 0.006113259597055948
+  },
+  "obj_clause_end": {
+    "n_words": 112,
+    "full_matched_r2": 0.5643089890480042,
+    "full_matched_std": 0.04724681210415917,
+    "full_cross_r2": -0.6513800024986267,
+    "full_cross_std": 0.11683180326333248,
+    "full_delta_r2": 1.215688991546631,
+    "feature_subspace_dim": 3,
+    "feature_r2": 0.6604179322719574,
+    "feature_std": 0.04168184881360241,
+    "channel_dim": 30,
+    "channel_r2": 0.9543797254562378,
+    "channel_std": 0.02324945575524044
+  }
+}
