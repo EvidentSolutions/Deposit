@@ -126,16 +126,6 @@ $\{12,\ldots,18\}$ gives $R^2 \approx 0.33\text{--}0.38$. L8$\to$L12 ($R^2 = 0.3
 near the maximum (L8$\to$L14, $R^2 = 0.38$). Below consumer layer~10, the transport signal
 is weak ($R^2 < 0.23$); the source layer matters little once it exceeds~2.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.85\linewidth]{figures/fig5_layer_heatmap.pdf}
-\caption{Centered $R^2$ of the deposit map (subject$\to$verb) across source and consumer
-layer pairs. The black square marks L8$\to$L12 (used throughout). The result is a broad
-plateau: $R^2 \approx 0.33\text{--}0.38$ for source layers $\leq$10 and consumer layers
-12--18.}
-\label{fig:layer-heatmap}
-\end{figure}
-
 Given $N$ source words, let $X \in \mathbb{R}^{N \times d}$ be the centered lexical
 representations (source token, layer~8) and $Y \in \mathbb{R}^{N \times d}$ the centered
 transport representations (consuming position, layer~12). We fit $R$ by ridge regression:
@@ -581,6 +571,19 @@ This research was conducted through iterative conversation with Claude
 and approved all claims. Claude conducted technical execution including code
 writing, experiment design, and statistical analysis. The human author takes
 full responsibility for all scientific claims.
+
+\section{Layer-pair sweep}
+\label{sec:layer-sweep-appendix}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.85\linewidth]{figures/fig5_layer_heatmap.pdf}
+\caption{Centered $R^2$ of the deposit map (subject$\to$verb) across source and consumer
+layer pairs. The black square marks L8$\to$L12 (used throughout). The result is a broad
+plateau: $R^2 \approx 0.33\text{--}0.38$ for source layers $\leq$10 and consumer layers
+12--18.}
+\label{fig:layer-heatmap}
+\end{figure}
 
 %----------------------------------------------------------------------
 \bibliographystyle{plainnat}
